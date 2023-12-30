@@ -1,0 +1,186 @@
+<!-- Certainly! Here's the complete HTML code with the JavaScript modifications to display today's date and the date that is 3 days from now dynamically in the `<div>` with class "info2":
+
+    ```html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three-Day Timer</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div class="hero-image-container">
+        <img
+          src="https://i.pinimg.com/474x/2d/cf/68/2dcf689ceba46c826341fbc847af2764.jpg"
+          class="hero-image"
+        />
+      </div>
+      <div class="hero-txt">
+        <h1>Exclusive <span class="h1">iPhone</span> <br />Giveaway!</h1>
+        <div class="top">
+          Hello dear followers! We are thrilled to announce our special iPhone
+          giveaway show,
+          <br />
+          our gratitude for your continuous support and engagement.
+        </div>
+        <div class="bottom">
+          Prize:<br />- Brand new iPhone 13 (64GB) in [Color of Choice]
+        </div>
+        <div class="timer" id="timer">
+          <span class="days">3</span> : <span class="hours">00</span> :
+          <span class="minutes">00</span> :
+          <span class="seconds">00</span>
+        </div>
+        <button><i class="bx bx-cart-add"></i> Get now</button>
+      </div>
+    </section>
+    <section class="foot">
+      <div class="Participate">
+        <h1>How to Participate:</h1>
+        <ul>
+          <li>
+            <i class="bx bx-plus-circle"></i> Follow Us: Make sure you're
+            following our page.
+          </li>
+          <br />
+          <li>
+            <i class="bx bx-like"></i> Like & Share: Like this post and share it
+            with your friends and family.
+          </li>
+          <br />
+          <li>
+            <i class="bx bx-message-dots"></i>Tag & Comment: Tag three friends
+            in the comments below and let us know why you'd love to win this
+            iPhone!
+          </li>
+        </ul>
+        <div class="info2">
+          <!-- The content will be dynamically updated by JavaScript -->
+        </div>
+      </div>
+      <div class="TC">
+        <h1>Terms & Conditions:</h1>
+        <p class="para">
+          <span class="tiny"> Participants must be 18 years or older. </span
+          ><br />
+        </p>
+        <div class="para-block">
+          This giveaway is open to residents of Nigeria, Benin city. Only one
+          entry per person is allowed, The winner will be selected randomly and
+          notified via direct message. The iPhone will be shipped to the winner
+          free of charge. Don't miss this incredible opportunity to get your
+          hands on the latest iPhone model! Good luck to everyone, and thank you
+          once again for your unwavering support.
+        </div>
+        <br />
+        #iPhoneGiveaway #TechGiveaway #WinAniPhone [Company Name] 🌐 [Website
+        Link]
+      </div>
+    </section>
+  </body>
+</html>
+```
+
+<!-- With this code, the "info2" div will display the current date and the date that is 3 days from now, and both dates will auto-update when the page is loaded. -->
+
+<!-- ## Documentation for Three-Day Timer Webpage
+
+### Overview:
+This document provides a detailed explanation of the HTML and JavaScript code that constructs a webpage featuring a three-day timer and dynamic dates.
+
+---
+
+### HTML Structure:
+
+1. **Document Type Declaration (`<!DOCTYPE html>`)**: 
+   - Specifies the document type and version of HTML being used.
+
+2. **HTML (`<html lang="en">`)**:
+   - Root element for the HTML document with a language attribute set to "en" for English.
+
+3. **Head Section (`<head>`)**:
+   - Contains meta information, links to external resources, and scripts.
+   
+   **Meta Tags**:
+     - Specifies character set.
+     - Sets the title of the webpage.
+
+   **Links**:
+     - External CSS links for styles.
+     - External font links from Google Fonts.
+
+   **Script Section**:
+     - Contains JavaScript code for functionality and DOM manipulation.
+
+4. **Body Section (`<body>`)**:
+   - Contains the visible content of the webpage.
+
+   **Main Section (`<section class="main">`)**:
+     - Contains main content, including a hero image, text, and a timer.
+
+   **Footer Section (`<section class="foot">`)**:
+     - Contains additional content such as participation guidelines, terms, and conditions.
+
+---
+
+### JavaScript Functionality:
+
+1. **DOMContentLoaded Event Listener**:
+   - Ensures that the JavaScript code runs after the HTML document is fully loaded.
+
+2. **Deadline Calculation**:
+   - Calculates a deadline that is 3 days from the current date.
+
+3. **getTimeRemaining Function**:
+   - Computes the time remaining between the current time and the deadline.
+
+4. **initializeClock Function**:
+   - Initializes and updates the timer display on the webpage using the time remaining.
+
+5. **Date Calculation**:
+   - Retrieves the current date and calculates the date that is 3 days from now.
+
+6. **Updating info2 Div**:
+   - Dynamically updates the content of the `<div class="info2">` element with the current date and the date that is 3 days from now.
+
+---
+
+### Key Elements:
+
+1. **Timer Display (`<div class="timer" id="timer">`)**:
+   - Shows a countdown timer with days, hours, minutes, and seconds until the deadline.
+
+2. **Info2 Div (`<div class="info2">`)**:
+   - Displays information about the giveaway deadline, including the current date and the date that is 3 days from now.
+
+3. **Hero Image and Text**:
+   - Provides visual and textual content about an exclusive iPhone giveaway.
+
+4. **Participation Guidelines and Terms**:
+   - Offers information on how to participate in the giveaway and lists the terms and conditions.
+
+---
+
+### External Resources:
+
+- **Boxicons**: Used for icons in the webpage.
+- **Google Fonts**: Used for custom fonts in the webpage.
+
+---
+
+### Conclusion:
+
+The provided code creates a webpage that features a three-day timer and dynamic dates. It utilizes HTML for structure and JavaScript for functionality. The webpage showcases an exclusive iPhone giveaway, provides participation guidelines, and lists the terms and conditions. The timer counts down to a deadline set 3 days from the current date, and the `<div class="info2">` 
+    element dynamically displays the current date and the date that is 3 days from now. -->
