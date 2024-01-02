@@ -56,5 +56,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update the content of the info2 div
     var info2Div = document.querySelector('.info2');
-    info2Div.innerHTML = "Deadline: The giveaway ends on " + today + ". Winner will be announced on " + threeDaysFromNow + ".";
+    info2Div.innerHTML = "Deadline: The giveaway starts on " + today + ". the giveaway will be end on " + threeDaysFromNow + ".";
 });

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: auto;
+}
+
+.hero-image-container {
+  width: 40%;
+} /* this is a div class name for the hero image, i used this to create a flexbox */
+
+.hero-image {
+  width: 100%;
+} /*this is the hero image, it is set to 100% so that the image will occupy the space available in the hero image container*/
+
+.hero-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 0.8em;
+}
+
+.hero-txt h1 {
+  font-size: 3rem;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.1em;
+}
+
+.h1:hover {
+  color: #28ece0;
+  cursor: pointer;
+}
+
+.top {
+  font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
+  color: rgb(63, 61, 61);
+}
+
+.bottom {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif !important;
+  color: rgb(76, 74, 74);
+}
+
+button {
+  width: 40%;
+  padding: 0.6em 0.01em;
+  font-size: 1.2em;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif !important;
+  border: none;
+  outline: none;
+  background-color: #28ece0;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 0px 2px #082f2d;
+}
+
+.timer {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 2rem;
+}
+
+.foot {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  gap: 1em;
+}
+
+.Participate {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.info2 {
+  margin-top: 1em;
+  font-family: "Montserrat", sans-serif !important;
+  width: 90%;
+  align-self: flex-end;
+}
+
+ul li {
+  display: flex;
+  font-weight: 600;
+}
+
+li i {
+  color: #188e86;
+  font-size: 2rem;
+}
+
+.TC h1 {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 0.3em;
+}
+
+.tiny {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.para-block {
+  font-size: 1rem;
+  width: 70%;
+}
+
+.TC {
+  margin-top: 0.4em;
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width:320px), (min-width:480px) {
+    .main{
+display: flex;
+flex-direction: column;
+
+    }
+
+    .hero-image-container{
+        width: 80%;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-txt{
+        width: 100%;
+    }
+
+    
+}
